@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zadanie.TemplateController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="300.0" prefWidth="150.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="button2" mnemonicParsing="false" onAction="#click" prefHeight="70.0" prefWidth="90.0" text="2">
+               <font>
+                  <Font name="Serif Regular" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="button5" mnemonicParsing="false" onAction="#click" prefHeight="70.0" prefWidth="90.0" text="5">
+               <font>
+                  <Font name="Serif Regular" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="button8" mnemonicParsing="false" onAction="#click" prefHeight="70.0" prefWidth="90.0" text="8">
+               <font>
+                  <Font name="Serif Regular" size="36.0" />
+               </font>
+            </Button>
+            <Button layoutX="40.0" layoutY="205.0" mnemonicParsing="false" onAction="#clear" prefHeight="70.0" prefWidth="90.0" text="C">
+               <font>
+                  <Font name="Serif Regular" size="36.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </center>
+   <left>
+      <VBox alignment="CENTER" prefHeight="300.0" prefWidth="150.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button id="1" fx:id="button1" mnemonicParsing="false" onAction="#click" prefHeight="70.0" prefWidth="90.0" text="1">
+               <font>
+                  <Font name="Serif Regular" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="button4" mnemonicParsing="false" onAction="#click" prefHeight="70.0" prefWidth="90.0" text="4">
+               <font>
+                  <Font name="Serif Regular" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="button7" mnemonicParsing="false" onAction="#click" prefHeight="70.0" prefWidth="90.0" text="7">
+               <font>
+                  <Font name="Serif Regular" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="button0" mnemonicParsing="false" onAction="#click" prefHeight="70.0" prefWidth="90.0" text="0">
+               <font>
+                  <Font name="Serif Regular" size="36.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <right>
+      <VBox alignment="CENTER" prefHeight="300.0" prefWidth="150.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="button3" mnemonicParsing="false" onAction="#click" prefHeight="70.0" prefWidth="90.0" text="3">
+               <font>
+                  <Font name="Serif Regular" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="button6" mnemonicParsing="false" onAction="#click" prefHeight="70.0" prefWidth="90.0" text="6">
+               <font>
+                  <Font name="Serif Regular" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="button9" mnemonicParsing="false" onAction="#click" prefHeight="70.0" prefWidth="90.0" text="9">
+               <font>
+                  <Font name="Serif Regular" size="36.0" />
+               </font>
+            </Button>
+            <Button layoutX="40.0" layoutY="205.0" mnemonicParsing="false" onAction="#click" prefHeight="70.0" prefWidth="90.0" text=".">
+               <font>
+                  <Font name="Serif Regular" size="36.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </right>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="buttonPlus" mnemonicParsing="false" onAction="#operation" prefHeight="50.0" prefWidth="75.0" text="+">
+               <font>
+                  <Font name="Serif Regular" size="37.0" />
+               </font></Button>
+            <Button fx:id="buttonMinus" mnemonicParsing="false" onAction="#operation" prefHeight="50.0" prefWidth="75.0" text="-">
+               <font>
+                  <Font name="Serif Regular" size="37.0" />
+               </font></Button>
+            <Button fx:id="buttonDivide" mnemonicParsing="false" onAction="#operation" prefHeight="50.0" prefWidth="75.0" text="/">
+               <font>
+                  <Font name="Serif Regular" size="37.0" />
+               </font></Button>
+            <Button fx:id="buttonMultiply" layoutX="290.0" layoutY="35.0" mnemonicParsing="false" onAction="#operation" prefHeight="50.0" prefWidth="75.0" text="x">
+               <font>
+                  <Font name="Serif Regular" size="37.0" />
+               </font>
+            </Button>
+            <Button layoutX="313.0" layoutY="27.0" mnemonicParsing="false" onAction="#calculation" prefHeight="50.0" prefWidth="75.0" text="=">
+               <font>
+                  <Font name="Serif Regular" size="37.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+   <top>
+      <TextField fx:id="textField1" prefHeight="82.0" prefWidth="447.0" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </TextField>
+   </top>
+</BorderPane>
